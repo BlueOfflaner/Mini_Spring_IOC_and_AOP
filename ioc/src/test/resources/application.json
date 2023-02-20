@@ -1,0 +1,50 @@
+[
+  {
+    "name": "robot",
+    "className": "com.blue.pojo.Robot",
+    "constructorArgs": [
+      {
+        "name": "name",
+        "value": "rp"
+      }
+    ],
+    "propertyArgs": [
+      {
+        "name": "hand",
+        "ref": "hand"
+      },
+      {
+        "name": "mouth",
+        "ref": "mouth"
+      }
+    ]
+  },
+  {
+    "name": "hand",
+    "className": "com.blue.pojo.Hand",
+    "propertyArgs": [
+      {
+        "name": "code",
+        "value": "111111"
+      },
+      {
+        "name": "mouth",
+        "ref": "mouth"
+      }
+    ]
+  },
+  {
+    "name": "mouth",
+    "className": "com.blue.pojo.Mouth",
+    "propertyArgs": [
+      {
+        "name": "code",
+        "value": "222222"
+      },
+      {
+        "name": "hand",
+        "ref": "hand"
+      }
+    ]
+  }
+]

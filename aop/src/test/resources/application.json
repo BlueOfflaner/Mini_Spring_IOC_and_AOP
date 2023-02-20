@@ -1,0 +1,45 @@
+[
+  {
+    "name":"StartMethodPrint",
+    "className":"com.blue.aop.advice.StartMethodPrint"
+  },
+  {
+    "name":"StartTiming",
+    "className":"com.blue.aop.advice.StartTiming"
+  },
+  {
+    "name": "EndTiming",
+    "className":"com.blue.aop.advice.EndTiming"
+  },
+  {
+    "name": "Car",
+    "className": "com.blue.aop.pojo.Car"
+  },
+  {
+    "name": "Flight",
+    "className": "com.blue.aop.pojo.Flight"
+  },
+  {
+    "name": "Vehicle",
+    "className": "com.blue.aop.pojo.Vehicle"
+  },
+  {
+    "name": "CarProxy",
+    "className": "com.blue.framework.aop.core.ProxyBeanFactory",
+    "targetName": "Car",
+    "interceptorNames": [
+      "StartMethodPrint",
+      "StartTiming",
+      "EndTiming"
+    ]
+  },
+  {
+    "name": "VehicleProxy",
+    "className": "com.blue.framework.aop.core.ProxyBeanFactory",
+    "targetName": "Vehicle",
+    "interceptorNames": [
+      "StartTiming",
+      "EndTiming"
+    ]
+  }
+]
